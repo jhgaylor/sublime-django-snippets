@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+url(r'^${1:my_url}/\$', '${2:my_view}', name='${3:my_name}'),
+]]></content>
+    <tabTrigger>djurl</tabTrigger>
+    <description>named url pattern</description>
+    <scope>source.python</scope>
+</snippet>

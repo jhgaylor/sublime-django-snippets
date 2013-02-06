@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+from django.contrib import admin
+from ${1:my_app}.models import ${2:my_model}
+
+admin.site.register(${2:my_model})
+]]></content>
+    <tabTrigger>djAdmin</tabTrigger>
+    <description>admin.py boilerplate</description>
+    <scope>source.python</scope>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+class ${1:Person}(models.Model):
+    ${2:first_name} = models.${3:CharField(max_length=30)}
+
+    class Meta:
+        abstract = True
+
+    def get_absolute_url(self):
+        return super(${1:}, self).get_absolute_url()
+
+    def __unicode__(self):
+        return super(${1:}, self).__unicode__()
+]]></content>
+    <tabTrigger>djAbstractModel</tabTrigger>
+    <description>Abstract model</description>
+    <scope>source.python</scope>
+</snippet>
+

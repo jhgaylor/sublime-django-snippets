@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+def ${1:my_view}(request):
+    ${2:data} = {
+        '${3:foo}': 'hello world'
+    }
+    
+    return render_to_response('${4:myapp/template_folder/my_template.html}',
+                              ${2:}
+                              )
+]]></content>
+    <tabTrigger>djview</tabTrigger>
+    <description>views.py - render_to_response</description>
+    <scope>source.python</scope>
+</snippet>

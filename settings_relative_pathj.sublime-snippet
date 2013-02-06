@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+${1:import os}
+DJANGO_ROOT = os.path.dirname(os.path.realpath(django.__file__))
+SITE_ROOT = os.path.dirname(os.path.realpath('__file__'))
+]]></content>
+    <tabTrigger>djRelativePath</tabTrigger>
+    <description>Dynamic absolute paths</description>
+    <scope>source.python</scope>
+</snippet>
