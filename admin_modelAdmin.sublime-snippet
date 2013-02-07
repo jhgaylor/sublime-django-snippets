@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+class ${1:MyModelAdmin}(admin.ModelAdmin):
+    """Admin panel class for Post"""
+    exclude = (${2:'', })
+    date_hierarchy = ${3:'', }
+    list_display = (${4:'', })
+    list_filter = [${5:'', }]
+    search_fields = (${6:'', })
+
+    def save_model(self, request, obj, form, change):
+        """Customize save method via admin panel save"""
+        ${7:}
+        obj.save()
+]]></content>
+    <tabTrigger>djAdminModel</tabTrigger>
+    <description>admin.py ModelAdmin</description>
+    <scope>source.python</scope>
+</snippet>

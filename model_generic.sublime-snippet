@@ -3,6 +3,9 @@
 class ${1:Person}(models.Model):
     ${2:first_name} = models.${3:CharField(max_length=30)}
 
+    objects = models.Manager()
+
+
     class Meta:
         verbose_name = _("${4:person}")
         verbose_name_plural = _("${5:people}")

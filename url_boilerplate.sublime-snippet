@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+from django.conf.urls import patterns, include, url
+
+api_patterns = patterns('${1:base_view}',
+    url(r'^${2:pattern}\$', '${3:controller}', name="${4:name}"), 
+)
+
+]]></content>
+    <tabTrigger>djUrlBoilerplate</tabTrigger>
+    <description>urls.py boilerplate</description>
+    <scope>source.python</scope>
+</snippet>
